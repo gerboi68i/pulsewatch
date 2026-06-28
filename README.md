@@ -94,6 +94,8 @@ The included `vercel.json` registers a daily fallback cron for Vercel Hobby.
 
 ## Deploy
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fgerboi68i%2Fpulsewatch&env=DATABASE_URL,DIRECT_URL,SESSION_SECRET,CRON_SECRET&envDescription=Postgres%20connection%20strings%20and%20session%2Fcron%20secrets)
+
 PulseWatch runs anywhere Next.js does. The fastest path is Vercel plus a serverless Postgres database:
 
 1. Fork this repo and import it into Vercel.
