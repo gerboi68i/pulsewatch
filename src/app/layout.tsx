@@ -12,9 +12,31 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://pulsewatch-five.vercel.app";
+
 export const metadata: Metadata = {
-  title: "PulseWatch - Uptime and Status Monitoring",
-  description: "Monitor your websites and APIs around the clock, detect incidents instantly, and share a status page your users can trust.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "PulseWatch - Uptime and Status Monitoring",
+    template: "%s - PulseWatch",
+  },
+  description:
+    "Monitor your websites and APIs around the clock, detect incidents instantly, and share a status page your users can trust.",
+  keywords: ["uptime monitoring", "status page", "incident tracking", "response time", "website monitoring", "open source", "Next.js"],
+  applicationName: "PulseWatch",
+  openGraph: {
+    type: "website",
+    siteName: "PulseWatch",
+    url: SITE_URL,
+    title: "PulseWatch - Uptime and Status Monitoring",
+    description:
+      "Monitor your websites and APIs around the clock, detect incidents instantly, and share a status page your users can trust.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PulseWatch - Uptime and Status Monitoring",
+    description: "Open-source uptime and status monitoring for developers.",
+  },
 };
 
 export default function RootLayout({

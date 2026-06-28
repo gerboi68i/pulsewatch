@@ -19,7 +19,7 @@ const browser = await puppeteer.launch({
 
 for (const [path, name, height] of pages) {
   const page = await browser.newPage();
-  await page.setViewport({ width: 1440, height, deviceScaleFactor: 1 });
+  await page.setViewport({ width: Number(process.env.PW_WIDTH) || 1440, height, deviceScaleFactor: 1 });
   if (TOKEN) {
     await page.setCookie({ name: "pw_session", value: TOKEN, domain: url.hostname, path: "/", httpOnly: true, secure });
   }

@@ -6,6 +6,7 @@
 
 Add a website or API, and PulseWatch checks it on a schedule, records status code and response time on every check, opens and resolves incidents automatically, and gives you a clean public status page to share.
 
+[![CI](https://github.com/gerboi68i/pulsewatch/actions/workflows/ci.yml/badge.svg)](https://github.com/gerboi68i/pulsewatch/actions/workflows/ci.yml)
 [![License: AGPL v3](https://img.shields.io/badge/license-AGPL--3.0-2dd4bf.svg)](LICENSE)
 [![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=next.js)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)

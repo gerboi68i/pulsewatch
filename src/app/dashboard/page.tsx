@@ -153,13 +153,13 @@ export default async function DashboardPage() {
               return (
                 <Reveal key={m.id} delay={i * 60}>
                   <li className="card-hover flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-white/10 bg-slate-900/40 px-5 py-4 hover:border-white/20">
-                    <div className="flex min-w-0 items-center gap-3">
+                    <Link href={`/dashboard/${m.id}`} className="group/row flex min-w-0 items-center gap-3">
                       <span className={"h-2.5 w-2.5 shrink-0 rounded-full " + dot} />
                       <div className="min-w-0">
-                        <p className="font-medium text-white">{m.name}</p>
+                        <p className="font-medium text-white transition group-hover/row:text-emerald-400">{m.name}</p>
                         <p className="truncate text-xs text-slate-500">{m.url}</p>
                       </div>
-                    </div>
+                    </Link>
                     <div className="flex items-center gap-5 text-sm">
                       {spark.length > 1 ? (
                         <span className="hidden lg:block"><Sparkline data={spark} maxMs={maxMs} id={m.id} /></span>
